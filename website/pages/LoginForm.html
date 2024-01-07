@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Register</title>
+  <style>
+    /* CSS стилове за формите */
+    /* Можете да добавите стилове за по-добър външен вид */
+  </style>
+</head>
+<body>
+  <h1>Register</h1>
+  <form id="registerForm">
+    Username: <input type="text" id="registerUsername"><br>
+    Password: <input type="password" id="registerPassword"><br>
+    <input type="submit" value="Register">
+  </form>
+
+  <h1>Login</h1>
+  <form id="loginForm">
+    Username: <input type="text" id="loginUsername"><br>
+    Password: <input type="password" id="loginPassword"><br>
+    <input type="submit" value="Login">
+  </form>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const registerUsername = document.getElementById('registerUsername').value;
+      const registerPassword = document.getElementById('registerPassword').value;
+
+      const existingData = localStorage.getItem('fileData') || 'Usernames:\tPasswords:\n';
+
+      if (existingData.includes(registerUsername)) {
+        alert('Тези данни вече съществуват.');
+      } else {
+        const newData = `${existingData}${registerUsername}\t${registerPassword}\n`;
+        localStorage.setItem('fileData', newData);
+        alert('Регистрацията е успешна и данните са записани във файл.');
+      }
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const loginUsername = document.getElementById('loginUsername').value;
+      const loginPassword = document.getElementById('loginPassword').value;
+
+      const existingData = localStorage.getItem('fileData') || 'Usernames:\tPasswords:\n';
+      const users = existingData.split('\n').slice(1).map(row => row.split('\t'));
+
+      let found = false;
+      for (const user of users) {
+        if (user[0] === loginUsername && user[1] === loginPassword) {
+          found = true;
+          break;
+        }
+      }
+
+      if (found) {
+        alert('Влизане успешно!');
+        window.location.href = '/profilePage.html';
+      } else {
+        alert('Грешно потребителско име или парола.');
+      }
+    });
+  </script>
+</body>
+</html>
