@@ -1,7 +1,7 @@
 <h1 align="center" > The-Bankers </h1>
 <br>
 <p align="center">
-<img src="documentation/pictures/challengers logo.png" alt="logo" height="200" width="200""> 
+<img src="" alt="logo" height="200" width="200""> 
 </p>
 
 <br>
