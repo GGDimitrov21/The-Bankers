@@ -1,7 +1,7 @@
 <h1 align="center" > The-Bankers </h1>
 <br>
 <p align="center">
-<img src="website/logo/The_Bankers_logo.png" alt="logo" height="200" width="200"> <img src="website/logo/Project_logo.png" alt="logo" height="220" width="220"> 
+<img src="website/logo/The_Bankers_logo.png" alt="logo" height="200" width="200"> <img src="website/logo/Project_logo.png" alt="logo" height="200" width="200"> 
 </p>
 
 <br>
@@ -30,8 +30,8 @@ This site is suitable and convenient for people who want to bequeath their digit
 - <a href="https://github.com/VRLazarov21"> Valentin Lazarov (Scrum Trainer)</a> <br>
 
 ## See our documents here
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Microsoft_Word_2013-2019_logo.svg/587px-Microsoft_Word_2013-2019_logo.svg.png?20221202081051" width="15" height="15"> [documentation](https://github.com/VRLazarov21/Challengers/blob/main/documentation/Team%20Challengers%20documentaion.docx)  
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/640px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png" width="15" height="15"> [presentaion](https://github.com/VRLazarov21/Challengers/blob/main/documentation/Team%20Challenger%20presentation.pptx)  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Microsoft_Word_2013-2019_logo.svg/587px-Microsoft_Word_2013-2019_logo.svg.png?20221202081051" width="15" height="15"> [documentation](https://github.com/GGDimitrov21/The-Bankers/blob/main/documentaion/The%20Bankers%20Documentation.docx)  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/640px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png" width="15" height="15"> [presentaion](https://github.com/GGDimitrov21/The-Bankers/blob/main/documentaion/The%20Bankers%20presentation.pptx)  
 
 ##
 <h1 align="center" >Enjoy our website</h1>
