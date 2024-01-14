@@ -39,3 +39,50 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     alert('Wrong username or password.');
   }
 });
+
+var Profile=false;
+var Data="";
+
+function HomeSignin(){
+  let signinName=document.getElementById("registerUsername").value;
+  let signinPassword=document.getElementById("registerPassword").value;
+  while(length.signinPassword<8){
+    alert("Must be at least 8 characters long");
+  }
+  if(signinName!=""){
+    if(signinPassword!=""){
+      console.log("Sign in - "+"Username: "+signinName+", Password: "+signinPassword);
+      Profile=true;
+      Data="Username: "+signinName+", Password: "+signinPassword;
+      window.open("../index.html");
+    }
+    else{
+      alert("Password");
+    }
+  }
+  else{
+    alert("Username");
+  }
+}
+
+function HomeLogin(){
+  let loginName=document.getElementById("loginUsername").value;
+  let loginPassword=document.getElementById("loginPassword").value;
+  while(length.loginPassword<8){
+    alert("Must be at least 8 characters long");
+  } 
+  if(loginName!=""){
+    if(loginPassword!=""){
+      console.log("Log in - "+"Username: "+loginName+", Password: "+loginPassword);
+      Profile=true;
+      Data="Username: "+loginName+", Password: "+loginPassword;
+      window.open("../index.html");
+    }
+    else{
+      alert("Password");
+    }
+  }
+  else{
+    alert("Username");
+  }   
+}

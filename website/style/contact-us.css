@@ -1,10 +1,29 @@
 body{
-    font-family: 'Droid Serif', serif;
-    font-size: 18px;
-    color: white;
-    background-color: #3f75ae;
+  width: 95%;
+  height: 80%;
+  font-family: 'Droid Serif', serif;
+  font-size: 18px;
+  color: white;
+  background-color: #004990;
     /*background: url('');*/
-    background-size: cover;
+    /*background-size: cover;*/
+}
+
+#Home{
+  padding: 0.5% 1%;
+  font-size: 80%;
+  color: white;
+  position: absolute;
+  border: solid #004990;
+  background-color: #004990;
+  border-radius: 5px;
+  top: 2.5%;
+  left: 94%;
+}
+
+#Home:hover{
+  
+  background-color: #003366;
 }
 
 .contact-us{
@@ -14,10 +33,10 @@ body{
   font-family: 'Poppins';
 }
 
-.hero{
+#hero{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +51,12 @@ form{
   padding: 30px;
   font-size: 24px;
   border-radius: 25px;
+}
+
+#centerForm{
+  top: 20%;
+  width: 45%;
+  position: absolute;
 }
 
 .message-icon{
@@ -87,4 +112,13 @@ form input, textarea{
 
 .i-t {
     padding-top: 3.75px;
+}
+
+#contact-us-text{
+  color: #ffd900;
+}
+
+#box-content{
+  position: absolute;
+  top: 95%;
 }
