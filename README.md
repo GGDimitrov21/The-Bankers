@@ -1,7 +1,7 @@
 <h1 align="center" > The-Bankers </h1>
 <br>
 <p align="center">
-<img src="website/logo/The_Bankers_logo.png" alt="logo" height="200" width="200"> <img src="website/logo/Project_logo.png" alt="logo" height="220" width="220" top: 20%> 
+<img src="website/logo/The_Bankers_logo.png" alt="logo" height="200" width="200"> <img src="website/logo/Project_logo.png" alt="logo" height="220" width="220"> 
 </p>
 
 <br>
