@@ -1,5 +1,5 @@
 function Login(){
-    window.open("pages/LoginForm.html");
+    window.open("LoginForm.html");
   }
 
 function Home(){
