@@ -1,26 +1,25 @@
 import webbrowser #web page url library
 import os #system
 import time #sleep()
-import json #Convert from JSON to Python
-from urllib.request import urlopen
+#import json #Convert from JSON to Python
 
-with open('LoginForm.js') as f: #open LoginForm.js to get the data
-    data=json.load(f) #get the data
+#with open('../pages/LoginForm.js') as f: #open LoginForm.js to get the data
+#    data=json.load(f) #get the data
 
-for state in data['states']:
-    print(state['E-mail'], state['password']) #some JSON: x =  '{ "E-mail":"...@codingburgas.bg", "password":"...45667"}'
+#for state in data['states']:
+#    print(state['Username'], state['password']) #some JSON: x =  '{ "Username":"ATSivkov21", "password":"...45667"}'
 
-with open('Data.txt', 'w') as f: #open Data.txt to write
-    f.write(data, f, indent=2) #takes the data and puts it in the text file
+#with open('Data.txt', 'w') as f: #open Data.txt to write
+#    f.write(data, f, indent=2) #takes the data and puts it in the text file
 
-with urlopen("url_on_web_page") as responce:
-    source=responce.read() 
-data = json.loads(source) #gets all the data
+#with urlopen("url_on_web_page") as responce:
+#    source=responce.read() 
+#data = json.loads(source) #gets all the data
 
-url = "url_on_web_page"
-responce = urlopen(url)
-data = json.loads(responce.read().decode('utf-8'))
-print(data)
+#url = "url_on_web_page"
+#responce = urlopen(url)
+#data = json.loads(responce.read().decode('utf-8'))
+#print(data)
 
 #Example
 #Convert from JSON to Python:
@@ -43,7 +42,7 @@ def open_web_page():
    webbrowser.open_new_tab(uniform_resource_locator) 
 
 count_profiles_passwords = 1
-profiles_passwords_file = open("Profiles_Passwords.txt", "r")
+profiles_passwords_file = open("../python/Data.txt", "r")
 list_profiles_passwords = profiles_passwords_file.readlines()
 count_profiles_passwords = list_profiles_passwords[len(list_profiles_passwords)-1][0]
 count_profiles_passwords_1 = int(count_profiles_passwords)
@@ -55,7 +54,7 @@ print(f"Profiles - {count_profiles_passwords-1}")
 
 #function print all profiles and passwords in text document
 def p_p():
-    profiles_passwords_file = open("Profiles_Passwords.txt", "r")
+    profiles_passwords_file = open("Data.txt", "r")
     print(profiles_passwords_file.read())
     time.sleep(5)
     profiles_passwords_file.close()
@@ -63,7 +62,7 @@ def p_p():
 #function to check data in a text document
 def log_in():
     true_or_false_log_in = False
-    profiles_passwords_file = open("Profiles_Passwords.txt", "a")
+    profiles_passwords_file = open("Data.txt", "a")
 
     #enter an email
     Email_addres=input(str("Write your E-mail : "))
@@ -106,7 +105,7 @@ def sign_up():
             #the while loop checks the entered age
             while(Age_person<18):
                 Age_person=input(int("Write your age : "))
-            profiles_passwords_file = open("Profiles_Passwords.txt", "a")
+            profiles_passwords_file = open("Data.txt", "a")
             profiles_passwords_file.write(f"\n{count_profiles_passwords} :    " + "Pr-" + Email_addres + "   " + "Pa-" + Passwords)
             profiles_passwords_file.close()
 
@@ -122,7 +121,7 @@ def sign_up():
 
 #function to delete data in text document
 def delete():
-    profiles_passwords_file = open("Profiles_Passwords.txt", "r")
+    profiles_passwords_file = open("Data.txt", "r")
     list_profiles_passwords = profiles_passwords_file.readlines()
     profiles_passwords_file.close()
 
@@ -130,8 +129,8 @@ def delete():
     while(int(num_delete_account)<=1):
         num_delete_account = input("Write number for delete : ")
     list_profiles_passwords.pop(int(num_delete_account))
-    os.remove("Profiles_Passwords.txt")
-    profiles_passwords_file = open("Profiles_Passwords.txt", "a")
+    os.remove("Data.txt")
+    profiles_passwords_file = open("Data.txt", "a")
     for i in range(0, len(list_profiles_passwords)):
         if(i>=int(num_delete_account)):
             num_minus = int(list_profiles_passwords[i][0])
@@ -145,6 +144,7 @@ def main():
     chouse=" "
     while(chouse!="exit" or chouse!="stop"):
         menu = [
+            "|  page |",
             "| p _ p |",
             "|log  in|",
             "|sign up|",
@@ -152,7 +152,7 @@ def main():
         ]
 
         #print menu
-        for i in range(0,4):
+        for i in range(0,5):
             print(menu[i])
  
         chouse=input(str(" - "))
@@ -161,35 +161,41 @@ def main():
             os.system("cls")
 
             menu = [
+                "|  page |",
                 "| p _ p |",
                 "|log  in|",
                 "|sign up|",
+                "|del ete|"
             ]
 
-            for i in range(0,3):
+            #print menu
+            for i in range(0,5):
                 print(menu[i])
     
             chouse=input(str(" - "))
 
         #the conditions check the entered value
-        if(chouse=="p_p"):
-            p_p()
-            time.sleep(6)
+        if(chouse=="page" or chouse=="pages"):
+            open_web_page()  
 
-        if(chouse=="log_in" or chouse=="log in"):
+        if(chouse=="p_p" or chouse=="profiles" or chouse=="passwords"):
+            p_p()
+            time.sleep(10)
+
+        if(chouse=="log_in" or chouse=="log in" or chouse=="login"):
             log_in()
             time.sleep(2)
 
-        if(chouse=="sign_up" or chouse=="sign up"):
+        if(chouse=="sign_up" or chouse=="sign up" or chouse=="signup"):
             sign_up()
             time.sleep(2)
 
-        if(chouse=="delete"):
+        if(chouse=="delete" or chouse=="del"):
             delete()
             time.sleep(2)
 
         if(chouse=="exit" or chouse=="stop"):
-            with open('Profile_Password_Python.py','r') as firstfile, open('Profile_Password_Python_Code.txt','a') as secondfile: 
+            with open('python.py','r') as firstfile, open('Profile_Password_Python_Code.txt','a') as secondfile: 
       
                 # read content from first file 
                 for line in firstfile: 
