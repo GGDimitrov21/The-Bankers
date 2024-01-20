@@ -1,6 +1,46 @@
+import webbrowser #web page url library
 import os #system
 import time #sleep()
-import json
+import json #Convert from JSON to Python
+from urllib.request import urlopen
+
+with open('LoginForm.js') as f: #open LoginForm.js to get the data
+    data=json.load(f) #get the data
+
+for state in data['states']:
+    print(state['E-mail'], state['password']) #some JSON: x =  '{ "E-mail":"...@codingburgas.bg", "password":"...45667"}'
+
+with open('Data.txt', 'w') as f: #open Data.txt to write
+    f.write(data, f, indent=2) #takes the data and puts it in the text file
+
+with urlopen("url_on_web_page") as responce:
+    source=responce.read() 
+data = json.loads(source) #gets all the data
+
+url = "url_on_web_page"
+responce = urlopen(url)
+data = json.loads(responce.read().decode('utf-8'))
+print(data)
+
+#Example
+#Convert from JSON to Python:
+
+#import json
+
+# some JSON:
+#x =  '{ "name":"John", "age":30, "city":"New York"}'
+
+# parse x:
+#y = json.loads(x)
+
+# the result is a Python dictionary:
+#print(y["age"])
+
+#x=json.loads(y) 
+
+def open_web_page():
+   uniform_resource_locator=str('../pages/LoginForm.html')
+   webbrowser.open_new_tab(uniform_resource_locator) 
 
 count_profiles_passwords = 1
 profiles_passwords_file = open("Profiles_Passwords.txt", "r")
