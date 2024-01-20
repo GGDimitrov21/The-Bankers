@@ -1,0 +1,173 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+header {
+	background-color: #004990;
+	color: #ffffff;
+	padding: 0.2%;
+	text-align: center;
+}
+#The_Bankers_logo{
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	top: 0%;
+	left: 1%;
+}
+#The_Bankers_text{
+	position: absolute;
+	width: 15%;
+	height: 10%;
+	top: 0%;
+	left: 7%;
+}
+nav {
+	background-color: #f2f2f2;
+	border: 1px solid #cccccc;
+	overflow: hidden;
+}
+nav a {
+	float: left;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+nav a:hover {
+	background-color: #ddd;
+	color: #000000;
+}
+nav a.active {
+	background-color: #004990;
+	color: #ffffff;
+}
+footer {
+	background-color: #004990;
+	color: #ffffff;
+	padding: 2%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 96%;
+}
+footer a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	margin-right: 20px;
+}
+footer a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+#signin {
+	position: absolute;
+	top: 2.5%;
+	right: 2%;
+	background-color: #004990;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 100%;
+	cursor: pointer;
+	border: solid #004990;
+}
+#signin:hover {
+	background-color: #003366;
+}
+#login{
+	position: absolute;
+	top: 2.5%;
+	right: 8%;
+	background-color: #004990;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 100%;
+	cursor: pointer;
+	border: solid #004990;
+}
+#login:hover {
+	background-color: #003366;
+}
+#Welcome{
+	position: absolute;
+	top: 30%;
+	left: 35%;
+}
+
+#team{
+    position: absolute;
+    top: -10%;
+    left: 43%;
+    font-size: 300%;
+    font-family: bold;
+}
+    #BackendDeveloper1{
+        position: absolute;
+        width: 18%;
+        height: 60%;
+        top: 15%;
+        left: 11%;
+    }
+    #BackendDeveloper1Name{
+        color: black;
+        text-decoration: none;
+        font-size: 160%;
+        position: absolute;
+        top: 80%;
+        left: 11%;
+    }
+
+    #BackendDeveloper2{
+        position: absolute;
+        width: 18%;
+        height: 60%;
+        top: 15%;
+        left: 31%;
+    }
+    #BackendDeveloper2Name{
+        color: black;
+        text-decoration: none;
+        font-size: 160%;
+        position: absolute;
+        top: 80%;
+        left: 31%;
+    }
+
+    #FrontendDeveloper{
+        position: absolute;
+        width: 18%;
+        height: 60%;
+        top: 15%;
+        left: 51%;
+    }
+    #FrontendDeveloperName{
+        color: black;
+        text-decoration: none;
+        font-size: 160%;
+        position: absolute;
+        top: 80%;
+        left: 51%;
+    }
+
+    #SCRUMTrainer{
+        position: absolute;
+        width: 18%;
+        height: 60%;
+        top: 15%;
+        left: 71%;
+    }
+    #SCRUMTrainerName{
+        color: black;
+        text-decoration: none;
+        font-size: 160%;
+        position: absolute;
+        top: 80%;
+        left: 72.5%;
+    }

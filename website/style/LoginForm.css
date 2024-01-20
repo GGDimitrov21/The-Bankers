@@ -1,0 +1,82 @@
+  body{
+    background-image: url("../assets/MyDigitalWill.jpg");
+    background-size: 100%;
+  }
+
+  #The_Bankers_logo{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    top: 2%;
+    left: 1%;
+  }
+  #The_Bankers_text{
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    top: 2%;
+    left: 7%;
+  }
+
+  #Register{
+    font-size: 130%;
+    font-weight: bold;
+    color: #ff0000;
+    position: absolute;
+    left: 42%;
+    top: 18%;
+  }
+  #Login{
+    font-size: 130%;
+    font-weight: bold;
+    color: #ff0000;
+    position:absolute;
+    left: 42%;
+    top: 48%;
+  }
+  h1{
+    text-align: center;
+  }
+  form{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  button{
+    position: absolute;
+    left: 45%;
+    top: 92%;
+  }
+  #RegisterButton{
+    position: absolute;
+    left: 38%;
+    top: 92%;
+  }
+  #RegisterButton:hover{
+    background-color: #ff0000;
+  }
+  #LoginButton{
+    position: absolute;
+    left: 40%;
+    top: 92%;
+  }
+  #LoginButton:hover{
+    background-color: #ff0000;
+  }
+
+  #registerUsername{
+    color: #ff0000;
+  }
+
+  #registerPassword{
+    color: #ff0000;
+  }
+
+  #loginUsername{
+    color: #ff0000;
+  }
+
+  #loginPassword{
+    color: #ff0000;
+  }
