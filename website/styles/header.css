@@ -1,0 +1,251 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Main Rule */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  /* Hide horizontal scrollbar */
+  overflow-x: hidden; 
+}
+
+/*Add triangle shape at the top of the page*/
+
+/* Styling the Buttons on the Navigation Bar */
+.logo-button{
+  position: absolute;
+  max-height: 300%;
+  max-width: 300%;
+  top: 25%;
+  left: -350%;
+  border-color: var(--secondary-color);
+}
+
+/*Shortcut to index.html*/
+.shortcut{
+  position: relative;
+  font-size: 16pt;
+  font-family: 'Ubuntu', sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 1%;
+  padding: 3% 1%;
+  margin-top: 3%;
+  margin-right: 2%;
+  border: 1px solid var(--secondary-color);
+  left: 8.5%;
+  top: -43%;
+}
+.shortcut:hover{
+  filter: brightness(500%);
+}
+
+/*list(used for the navbar buttons)*/
+.anchor{
+  position: relative;
+  font-size: 16pt;
+  font-family: 'Ubuntu', sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 1%;
+  margin-top: 3%;
+  margin-right: 2%;
+  left: 34%;
+  top: -7%;
+  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);   
+  z-index: 3;
+}
+
+/*list hover animation*/
+.anchor:hover{
+  text-decoration: dashed;
+}
+
+/* Background for Navigation Bar*/
+.header-bg{
+  position: absolute;
+  display: inline;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 25%;
+  top: -12%;
+  z-index: 3;
+}
+.header-bg a{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Navigation Bar Buttons */
+.header{
+  list-style-type: none;
+  position: absolute;
+  left: -33%;
+  top: -7%;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  bottom: 89%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 0 0 1%;
+  padding: 0;
+  display: block;
+  transition: top 0.3s;
+  z-index: 3;
+}
+
+.header{
+  width: 90%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style Part for Navigation Bar Scroll Animaiton */
+body {
+  --nav-height: 100px;
+  padding-top: var(--nav-height);
+}
+
+.nav {
+  width: 100%;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  z-index: 3;
+}
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+  box-shadow: none;
+}
+
+/* Style for "Download Now" Button */
+a{
+  text-decoration: none;
+}
+a:visited{
+   color: var(--secondary-color);
+}
+a:link{
+  color: var(--secondary-color);
+}
+a:active{
+    color: var(--secondary-color);
+}
+
+/*Download button styling*/
+#download-button{
+  position: relative;
+  font-size: 16pt;
+  font-family: 'Ubuntu', sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 1%;
+  margin-top: 3%;
+  margin-right: 2%;
+  left: 50%;
+  top: -29%;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);   
+  transition-duration: 0.5s;
+  z-index: 3;
+}
+
+/*Download button hover animation*/
+#download-button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+    top: -37%;
+}
+
+.nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Should change the font-family*/
+}
+
+.scroll{
+  height: 2000px;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+/* Style for the navigation bar anchors */
+.header ul .anchor{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  margin-left: 20px;
+}
+.header ul .anchor a{
+  text-decoration: none;
+  color: var(--primary-color);
+  line-height: 30px;
+}
+.header ul ul a{
+  position:absolute;
+  top: 40px;
+  opacity: 0;
+  padding: -40px 20px;
+  visibility: hidden;
+  transition: top .25s;
+}
+.header ul .anchor:hover > ul{
+  opacity: 1;
+  visibility: visible;
+}
+.header ul ul .anchor a{
+  position: relative;
+  margin: 0px;
+  padding: 5px 0;
+  width: 370%;
+  float: none;
+  display: list-items;
+}
+.header ul ul ul .anchor  {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 0px;
+  left: 70px;
+}
+.header ul .anchor::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.25s;
+}
+.header ul .anchor:hover::after{
+  width: 100%;
+}

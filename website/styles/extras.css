@@ -1,0 +1,20 @@
+/*Scroll to top button, shows when the user scroll down*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    left: 90%;
+    right: 10px;
+  }
+  #myBtn:hover {
+    background-color: transparent;
+  }
+  #arrow {
+    width: 65px;
+    height: 90px;
+  }

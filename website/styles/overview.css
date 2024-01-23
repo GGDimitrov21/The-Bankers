@@ -1,0 +1,107 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Details of the overview pictures and text */
+.guide1{
+    position: absolute;
+    left: 1%;
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+}
+.guide2{
+    position: absolute;
+    left: 54%;
+    top: 30%;
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+}
+.guide3{
+    position: absolute;
+    left: 1%;
+    top: 57%;
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+}
+.bank{
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    transition-duration: 1s;
+}
+.bank:hover{
+    filter: brightness(500%);
+}
+.the-bankers-name{
+    position: absolute;
+    font-family: 'VT323';
+    font-size: 36px;
+    top: 29.7%;
+    left: 41.7%;
+    color: var(--primary-color);
+}
+.guide-1{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 29%;
+    top: 8%;
+    font-size: 20px;
+}
+.guide-2{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 29%;
+    top: 13%;
+    font-size: 18.9px;
+}
+.guide-3{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 29%;
+    top: 18%;
+    font-size: 20px;
+}
+.guide-4{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 29%;
+    top: 23%;
+    font-size: 20px;
+}
+.service{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top: 30.5%;
+    left: 10%;
+    font-size: 40px;
+}
+.service-1{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top: 110%;
+    left: 20%;
+    font-size: 40px;
+}
+.service-2{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top: 200%;
+    left: 20%;
+    font-size: 40px;
+}
+.service-3{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top: 300%;
+    left: 20%;
+    font-size: 40px;
+}
+.service-4{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top: 400%;
+    left: 20%;
+    font-size: 40px;
+}

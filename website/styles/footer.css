@@ -1,0 +1,57 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Main Rule */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set footer design */
+footer{
+    background: var(--primary-color);
+    height: 30%;
+    width: 100vw;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: -5px;
+    color: #fff;
+    border-top: 6px solid rgb(40, 40, 40);
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-bottom{
+    background: var(--primary-color);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 32px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+/* Display of "Data Pirates" name */
+#name-footer{
+    display: grid;
+    margin-top: 0%;
+    margin-left: -80%;
+    color: var(--secondary-color);
+}
+/* Display of the "2024" date */
+#date{
+    display: grid;
+    margin-top: -2%;
+    margin-left: 80%;
+    color: var(--secondary-color);
+}
