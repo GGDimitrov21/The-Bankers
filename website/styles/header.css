@@ -59,7 +59,7 @@ body{
   margin-right: 1%;
   margin-top: 3%;
   margin-right: 2%;
-  left: 34%;
+  left: 39.5%;
   top: -7%;
   border: 1px solid var(--secondary-color);
   color: var(--primary-color);   
@@ -67,7 +67,7 @@ body{
 }
 
 #anchor-right{
-  left: 50%;
+  left: 60%;
 }
 
 
