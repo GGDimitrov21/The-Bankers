@@ -1,0 +1,32 @@
+{
+    "person": [
+        {        
+            "name": "ATSivkov21",
+            "e-mail": "ATSivkov21@codingburgas.bg",
+            "password": "12345678",
+            "phone_number": "0891111111",
+            "money": "0b10100"
+        },
+        {        
+            "name": "VRLazarov21",
+            "e-mail": "VRLazarov21@codingburgas.bg",
+            "password": "12345678",
+            "phone_number": "0892222222",
+            "money": "0b10100"
+        },
+        {        
+            "name": "GGDimitrov21",
+            "e-mail": "GGDimitrov21@codingburgas.bg",
+            "password": "12345678",
+            "phone_number": "0893333333",
+            "money": "0b10100"
+        },
+        {        
+            "name": "DCStefanov21",
+            "e-mail": "DCStefanov21@codingburgas.bg",
+            "password": "12345678",
+            "phone_number": "08934444444",
+            "money": "0b10100"
+        }
+    ]
+}

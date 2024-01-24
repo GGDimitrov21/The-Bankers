@@ -38,8 +38,8 @@
     position: absolute;
     font-family: 'VT323';
     font-size: 36px;
-    top: 29.7%;
-    left: 41.7%;
+    top: 30%;
+    left: 37%;
     color: var(--primary-color);
 }
 .guide-1{
@@ -47,61 +47,61 @@
     font-family: 'Ubuntu', sans-serif;
     left: 29%;
     top: 8%;
-    font-size: 20px;
+    font-size: 28px;
 }
 .guide-2{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
     left: 29%;
     top: 13%;
-    font-size: 18.9px;
+    font-size: 24px;
 }
 .guide-3{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
     left: 29%;
     top: 18%;
-    font-size: 20px;
+    font-size: 24px;
 }
 .guide-4{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
     left: 29%;
     top: 23%;
-    font-size: 20px;
+    font-size: 24px;
 }
 .service{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
-    top: 30.5%;
+    top: 35%;
     left: 10%;
-    font-size: 40px;
+    font-size: 28px;
 }
 .service-1{
-    position: absolute;
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     top: 110%;
-    left: 20%;
-    font-size: 40px;
+    left: 10%;
+    font-size: 24px;
 }
 .service-2{
-    position: absolute;
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     top: 200%;
-    left: 20%;
-    font-size: 40px;
+    left: 10%;
+    font-size: 24px;
 }
 .service-3{
-    position: absolute;
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     top: 300%;
-    left: 20%;
-    font-size: 40px;
+    left: 10%;
+    font-size: 24px;
 }
 .service-4{
-    position: absolute;
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     top: 400%;
-    left: 20%;
-    font-size: 40px;
+    left: 10%;
+    font-size: 24px;
 }

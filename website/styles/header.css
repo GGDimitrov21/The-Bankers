@@ -66,6 +66,11 @@ body{
   z-index: 3;
 }
 
+#anchor-right{
+  left: 50%;
+}
+
+
 /*list hover animation*/
 .anchor:hover{
   text-decoration: dashed;
